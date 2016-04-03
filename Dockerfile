@@ -9,8 +9,5 @@ ENV packages "gnuradio"
 # Update apt-get
 RUN apt-get update
 
-# Install previously selected packages
-RUN pybombs -p ${PyBOMBS_prefix} -v install ${packages}
-
-# Clean-up of unused source files
-RUN rm -rf ${PyBOMBS_init}/src/*
+# Install previously selected packages and clean-up unused source
+RUN pybombs -p ${PyBOMBS_prefix} -v install ${packages} && rm -rf ${PyBOMBS_init}/src/*
