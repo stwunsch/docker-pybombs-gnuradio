@@ -11,3 +11,6 @@ RUN apt-get update
 
 # Install previously selected packages
 RUN pybombs -p ${PyBOMBS_prefix} -v install ${packages}
+
+# Clean-up of unused source files
+RUN rm -rf ${PyBOMBS_init}/src/gnuradio
