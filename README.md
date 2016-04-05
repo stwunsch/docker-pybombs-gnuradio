@@ -44,7 +44,7 @@ Run docker image without GUI
 
 Simply run following command.
 
-$ docker run --rm -ti stwunsch/docker-pybombs-gnuradio:'image tag'
+$ docker run --rm -ti stwunsch/docker-pybombs-gnuradio
 
 Run docker image with X forwarding
 ----------------------------------
@@ -54,4 +54,4 @@ accessible. Otherwise use the image with included VNC server
 (stwunsch/docker-pybombs-gnuradio-vnc).
 
 $ docker run --rm -ti -e DISPLAY -v $HOME/.Xauthority:/root/.Xauthority \
-    --net=host stwunsch/docker-pybombs-gnuradio:'image tag'
+    --net=host stwunsch/docker-pybombs-gnuradio
