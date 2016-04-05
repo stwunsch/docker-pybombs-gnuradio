@@ -35,11 +35,9 @@ $ docker help
 Pull docker image
 ----------------
 
-First, go on https://hub.docker.com/r/stwunsch/docker-pybombs-gnuradio/ and
-look for the available image tags, e.g., 'v3.7.9.1-145-g5e383b0b'. Then, pull
-the docker image with following command.
+You can download (pull) the image via following command.
 
-$ docker pull stwunsch/docker-pybombs-gnuradio:'image tag'
+$ docker pull stwunsch/docker-pybombs-gnuradio
 
 Run docker image without GUI
 ----------------------------
@@ -51,7 +49,9 @@ $ docker run --rm -ti stwunsch/docker-pybombs-gnuradio:'image tag'
 Run docker image with X forwarding
 ----------------------------------
 
-This should work on most Linux X server machines.
+This should work on most Linux X server machines and makes GNU Radio Companion
+accessible. Otherwise use the image with included VNC server
+(stwunsch/docker-pybombs-gnuradio-vnc).
 
 $ docker run --rm -ti -e DISPLAY -v $HOME/.Xauthority:/root/.Xauthority \
     --net=host stwunsch/docker-pybombs-gnuradio:'image tag'
