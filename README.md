@@ -4,8 +4,8 @@ GNU Radio with UHD via PyBOMBS Dockerfile
 Docker 101
 ----------
 
-Does your docker daemon run? I suppose you have systemd and that you are member of the
-docker group (or call it as root).
+Does your docker daemon run? I suppose you have systemd and that you are member
+of the docker group (or call it as root).
 
 $ systemctl start docker.service
 
@@ -50,7 +50,7 @@ Run docker image with X forwarding
 ----------------------------------
 
 This should work on most Linux X server machines and makes GNU Radio Companion
-accessible. Otherwise use the image with included VNC server
+accessible. Otherwise, use the image with included VNC server
 (stwunsch/docker-pybombs-gnuradio-vnc).
 
 $ docker run --rm -ti -e DISPLAY -v $HOME/.Xauthority:/root/.Xauthority \
