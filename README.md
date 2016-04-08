@@ -60,3 +60,9 @@ accessible. Otherwise, use the image with included VNC server
 
 $ docker run --rm -ti -e DISPLAY -v $HOME/.Xauthority:/root/.Xauthority \
     --net=host stwunsch/docker-pybombs-gnuradio
+
+Run docker image with attached VNC server
+-----------------------------------------
+
+Run the image 'stwunsch/docker-pybombs-gnuradio-vnc'. For more information,
+have a look at the repository https://github.com/stwunsch/docker-pybombs-gnuradio-vnc.
