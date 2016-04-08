@@ -1,11 +1,6 @@
 # GNU Radio Dockerfile
 GNU Radio with UHD via PyBOMBS Dockerfile
 
-The installations uses a reduced GNU Radio installation to satisfy the 2h
-build restriction of hub.docker.com.
-
-Have a look at the file 'gnuradio-base.lwr' and the appropriate cmake flags!
-
 Docker 101
 ----------
 
