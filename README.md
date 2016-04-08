@@ -39,6 +39,13 @@ You can download (pull) the image via following command.
 
 $ docker pull stwunsch/docker-pybombs-gnuradio
 
+Build docker image
+------------------
+
+Go to the repository directory and run following command:
+
+$ docker build -t stwunsch/docker-pybombs-gnuradio .
+
 Run docker image without GUI
 ----------------------------
 
